@@ -1,0 +1,34 @@
+package consoCarbonne;
+
+import java.text.DecimalFormat;
+
+public class Habillement extends ConsoCarbone {
+	private double montant;
+	private static DecimalFormat df2 = new DecimalFormat("#.##");
+	private final static int habillement = 763;
+	
+	public Habillement(double montant) {
+		super();
+		this.montant = montant;
+	}
+	
+	public double getMontant() {
+		return montant;
+	}
+	
+	public void setMontant(double montant) {
+		this.montant = montant;
+	}
+
+	@Override
+	public void setImpact() {
+		impact = montant/1750.0;
+	}
+	
+
+	@Override
+	public String toString() {
+		return "L'empreinte carbone due à la consommation de bien d'un montant de " + montant + "  est de " + df2.format(impact) + "TCO2eq";
+	}
+
+}
