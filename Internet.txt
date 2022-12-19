@@ -2,12 +2,12 @@ package consoCarbonne;
 
 import java.text.DecimalFormat;
 
-public class Habillement extends ConsoCarbone {
+public class Internet extends ConsoCarbone{
+	private final static int internet = 1180;
 	private double montant;
 	private static DecimalFormat df2 = new DecimalFormat("#.##");
-	private final static int habillement = 763;
-	
-	public Habillement(double montant) {
+
+public Internet(double montant) {
 		super();
 		this.montant = montant;
 	}
@@ -20,7 +20,7 @@ public class Habillement extends ConsoCarbone {
 		this.montant = montant;
 	}
 
-	public int getHabillement(){
+	public int getInternet(){
 		return habillement;
 	}
 
@@ -29,11 +29,12 @@ public class Habillement extends ConsoCarbone {
 	public void setImpact() {
 		impact = montant/1750.0;
 	}
-	
 
 	@Override
 	public String toString() {
-		return "L'empreinte carbone due à la consommation d'un habit d'un montant de " + montant + "  est de " + df2.format(impact) + "TCO2eq";
+		return "L'empreinte carbone due à la consommation de  d'un montant de " + montant + "  est de " + df2.format(impact) + "TCO2eq";
 	}
 
-}
+
+
+

@@ -1,0 +1,23 @@
+package consoCarbonne;
+
+import java.text.DecimalFormat;
+
+public class BienConso{
+	private final static int habillement;
+	private final static int biensEtServices;
+	private final static int internet;
+	private static double empruntMoyenne;
+
+	
+	public static void empreintMoyen() {			
+		habillement.getHabillement();
+		biensEtServices.getBiensEtServices();
+		internet.getInternet();
+		empruntMoyenne = (habillement + biensEtServices + internet) * Math.pow(10, -3);
+	}
+	
+	@Override
+	public String toString() {
+		return "L'empreinte carbone moyenne anuelle d'un français due à sa consommation de bien est de " + df2.format(empruntMoyenne) + " TCO2eq\n";
+	}
+}
