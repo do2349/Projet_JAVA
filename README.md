@@ -15,3 +15,5 @@ Attention cependant avec ce deuxième consructeur, le fichier texte doit respect
 Il faut aussi faire attention à bien respecter le type des variables.
 
 Exemple : TxBoeuf : Taux de repas à base de boeuf : 0,4
+
+On a aussi créer un extension populaiton, qui permet de vérifier l'impact de mesures politiques sur l'empreinte carbone d'une population.
