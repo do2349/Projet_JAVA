@@ -2,16 +2,9 @@
 
 Il s'agit d'une application qui permet de calculer la consommation carbone d'un utilisateur.
 
-<H1> Initialisation </H1>
+On peut calculer l'empreinte carbone d'un utilisateur et la comparer à l'empreinte carbone d'un français moyen.
+On peut aussi modéliser une population d'utilisateur pour tester l'impact que certaines mesures politiques ont sur l'empreinte carbone d'une population.
 
-Il y a deux moyens d'initialiser le projet.
+Le projet ce lance simplement dans un environnement de développement adapté à Java.
 
-Soit en utilisant le constructeur utilisateur simple : Utilisateur utilisateur = new utilisateur();
-qui a permet l'utilisateur d'entrer sa consommation carbone via le clavier. 
-
-Soit en utilisant le constructeur qui permet d'initialiser un fichier texte qui sera lu par l'application : Utilisateur utilisateur = new utilisateur(File file);
-
-Attention cependant avec ce deuxième consructeur, le fichier texte doit respecter des règles précise. On doit indiquer une valeur par ligne et les ":" servent de séparateur et il ne doit pas y avaoir de point à la fin des lignes
-Il faut aussi faire attention à bien respecter le type des variables.
-
-Exemple : TxBoeuf : Taux de repas à base de boeuf : 0,4
+Il y a une possibilité d'ajouter un fichier texte pour initialiser un utilisateur et lire les valeurs de ce fichier texte directement dans le projet.
